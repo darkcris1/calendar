@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calendar</title>
+    <link
+      rel="stylesheet"
+      href="style/calendar.css"
+      type="text/css"
+      media="all"
+    />
+  </head>
+  <body onload="calendarFunction()">
+    <div class="displayDate">
+      <span class="dayDis">19</span>
+      <span class="monthDis">April</span>
+      <span class="yearDis">2020</span>
+    </div>
+    <div class="cont">
+      <div align="center" class="calendarCont">
+        <header class="monthYear">
+          <button class="next">></button>
+          <button class="prev">></button>
+          <div class="month">April</div>
+          <div class="year">2020</div>
+        </header>
+        <table cellspacing="20" class="calendarDates">
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+          <tr>
+            <td id="d1"></td>
+            <td id="d2"></td>
+            <td id="d3"></td>
+            <td id="d4"></td>
+            <td id="d5"></td>
+            <td id="d6"></td>
+            <td id="d7"></td>
+          </tr>
+          <tr>
+            <td id="d8"></td>
+            <td id="d9"></td>
+            <td id="d10"></td>
+            <td id="d11"></td>
+            <td id="d12"></td>
+            <td id="d13"></td>
+            <td id="d14"></td>
+          </tr>
+          <tr>
+            <td id="d15"></td>
+            <td id="d16"></td>
+            <td id="d17"></td>
+            <td id="d18"></td>
+            <td id="d19"></td>
+            <td id="d20"></td>
+            <td id="d21"></td>
+          </tr>
+          <tr>
+            <td id="d22"></td>
+            <td id="d23"></td>
+            <td id="d24"></td>
+            <td id="d25"></td>
+            <td id="d26"></td>
+            <td id="d27"></td>
+            <td id="d28"></td>
+          </tr>
+          <tr>
+            <td id="d29"></td>
+            <td id="d30"></td>
+            <td id="d31"></td>
+            <td id="d32"></td>
+            <td id="d33"></td>
+            <td id="d34"></td>
+            <td id="d35"></td>
+          </tr>
+          <tr>
+            <td id="d36"></td>
+            <td id="d37"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script
+      src="script/calendar.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+  </body>
+</html>

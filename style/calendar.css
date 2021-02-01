@@ -1,0 +1,135 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  justify-content: center;
+  background: #d3d8d9;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  position: relative;
+}
+button {
+  cursor: pointer;
+}
+buton:disabled {
+  cursor: default;
+}
+.cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in;
+  transform: scale(0);
+  opacity: 0;
+}
+.cont.intro {
+  transform: scale(1);
+  opacity: 1;
+}
+.calendarCont {
+  padding-top: 60px;
+  position: absolute;
+  transform: scale(1);
+  box-shadow: 2px 2px 5px 0 black;
+  background: linear-gradient(45deg, #c6873b, #54bdd7);
+}
+.monthYear {
+  margin-bottom: 5px;
+}
+.monthYear .year {
+  font-size: 20px;
+  color: white;
+}
+.monthYear .month {
+  color: #00fd58;
+  font-size: 40px;
+  font-weight: bold;
+}
+.prev,
+.next {
+  position: absolute;
+  font-weight: bolder;
+  color: grey;
+  background: none;
+  border: none;
+  text-align: center;
+  height: 155px;
+  width: 40%;
+  font-size: 50px;
+}
+.prev:focus,
+.next:focus {
+  outline: none;
+}
+.prev {
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+}
+.next {
+  top: 0;
+  right: 0;
+}
+.calendarDates {
+  border: none;
+}
+tr {
+  padding: 4px;
+}
+tr td:nth-child(1),
+tr td:nth-child(7),
+tr th:nth-child(1),
+tr th:nth-child(7) {
+  color: #9ee28a;
+  font-weight: bolder;
+}
+th,
+td {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+.highLight {
+  background: #0000ff67;
+  border-radius: 40%;
+  padding: 2px;
+}
+.displayDate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5);
+  display: grid;
+  background: #b99a9a;
+  border: 2px solid #eac075;
+  text-shadow: none;
+  height: 67px;
+  cursor: pointer;
+  grid-template-columns: 1fr 2fr;
+  width: 150px;
+  grid-column-gap: 10px;
+  grid-template-rows: 30px;
+  text-align: center;
+  align-items: center;
+  color: green;
+  transition: all 0.6s ease;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2),
+    3px 5px 10px 0 rgba(0, 0, 0, 0.217);
+  font-weight: bolder;
+}
+.displayDate.scale {
+  transform: translate(-50%, -50%) scale(0);
+}
